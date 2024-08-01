@@ -22,14 +22,14 @@ export default function MyStack() {
           component={HomeScreen}
           options={{title: 'Run For Your Life - The Game'}}
         />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} options={{title: 'Good Luck.  Work Hard.'}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 const ProfileScreen = ({navigation, route}) => {
-  return <Text>This is {route.params.name}'s profile</Text>;
+  return <Text> {route.params.name}</Text>;
 };
 
 const HomeScreen = ({navigation}) => {
@@ -37,7 +37,7 @@ const HomeScreen = ({navigation}) => {
     <Button
       title="Start Game"
       onPress={() =>
-        navigation.navigate('Profile', {name: 'Jane'})
+        navigation.navigate('Profile', {name: 'Game Started'})
       }
     />
   );
