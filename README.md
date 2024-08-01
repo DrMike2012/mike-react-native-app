@@ -9,6 +9,10 @@ Requirements
   - `nvm install 18.17.0` >> `nvm use 18.17.0`  >> `node --version` (to verify current version)
 - JDK version 14 or newer
 
+Setting Up Device - 
+in Android Studio - click on Tools>> Device Manager >>> 
+Start Emulator Device
+
 Running the Project From the mike-react-native-app directory
 - - `cd HeartRate-Game`
 - `npm run android`
